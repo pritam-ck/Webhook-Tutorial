@@ -20,12 +20,12 @@ global with sharing class webhookTutorial{
                 ps = (pusher)parser.readValueAs(pusher.class);
                 System.debug(ps);
             }
-            // if(parser.getText()=='head_commit'){
-            //     System.debug('Inside Head Commit');
-            //     parser.nextToken();
-            //     hc = (head_commit)parser.readValueAs(head_commit.class);
-            //     System.debug(hc);
-            // }
+            if(parser.getText()=='head_commit'){
+                System.debug('Inside Head Commit');
+                parser.nextToken();
+                hc = (head_commit)parser.readValueAs(head_commit.class);
+                System.debug(hc);
+            }
         
             if(parser.getText() == 'full_name'){
                 System.debug('Inside Full Name');
