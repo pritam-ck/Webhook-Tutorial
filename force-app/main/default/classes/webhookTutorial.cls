@@ -41,7 +41,7 @@ global with sharing class webhookTutorial{
         detail.Commit_Message__c = hc!=null?hc.message:'';
         // detail.Commit_Timestamp__c = hc!=null?hc.timestamp:'';
         // detail.Committed_URL__c = hc!=null?hc.url:'';
-        // detail.Repository_Name__c = repo;
+        detail.Repository_Name__c = repo;
         // detail.Added_Components__c = hc!=null&&hc.added!=null?String.join(hc.added,','):'';
         // detail.Removed_Components__c = hc!=null&&hc.removed!=null?String.join(hc.removed,','):'';
         // detail.Modified_Components__c = hc!=null&&hc.modified=null?String.join(hc.modified,','):'';
